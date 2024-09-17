@@ -45,7 +45,7 @@ async def handle_message(update: Update, context: CallbackContext) -> None:
 
 def main():
     # Replace 'YOUR_TOKEN' with your actual bot token
-    application = Application.builder().token("7056957334:AAF6cM1DbbvYSoP6-oTArtWai8Trc_ul-w8").build()
+    application = Application.builder().token("Token").build()
     
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
